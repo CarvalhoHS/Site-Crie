@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB CRie</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+        Links referentes a obetenção das fontes para o projeto
+    -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<!--
+    Link para as fontes do FONT AWESOME
+-->
+<script src="https://use.fontawesome.com/b25df6b4c5.js"></script>
+
+</head>
+<body>
+
+    <div id="preloader"></div>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"><img src="images/Logo.png"></a>
+    <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="EscondeMenu()"></i>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projetos</a></li>
+        <li><a href="">Publicações</a></li>
+        <li><a href="">Pessoas</a></li>
+        <li><a href="">Sobre nós</a></li>
+        <li><a href="">Contato</a></li>
+    </ul>
+</div>
+    <i class="fa fa-bars" onclick="Mostramenu()"></i>
+</nav>
+<h1>Contato</h1>
+    </section>
+<!-- Conteudo -->
+<section class="Location">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6783.643969473679!2d-49.46736422355632!3d-28.95149722959859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95222e60be2e43ed%3A0xc9903951248da1ee!2sUFSC%20Campus%20Ararangu%C3%A1%20-%20Unidade%20Jardim%20das%20Avenidas!5e0!3m2!1spt-BR!2sbr!4v1665592414242!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="Contate-nos">
+    <div class="row">
+        <div class="contato-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>R. Gov. Jorge Lacerda - 3201</h5>
+                    <p>Urussanguinha, Araranguá - SC, 88906-072</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>aqui@email.com</h5>
+                </span>
+            </div>
+        </div>
+        <div class="contato-col">
+            <form action="">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <input type="text" placeholder="Assunto" required>
+                <textarea rows="8" placeholder="Mensagem" required></textarea>
+                <button type="submit" class="buttom-2"> Encaminhe a mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-----JavaScript para mostrar e esconder o menu ---->
+    <script>
+        var navlinks = document.getElementById("navLinks")
+        var loader = document.getElementById("preloader")
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+
+        function Mostramenu(){
+            navlinks.style.right = "0";
+        }
+        function EscondeMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>

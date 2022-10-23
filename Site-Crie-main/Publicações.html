@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB CRie</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+        Links referentes a obetenção das fontes para o projeto
+    -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<!--
+    Link para as fontes do FONT AWESOME
+-->
+<script src="https://use.fontawesome.com/b25df6b4c5.js"></script>
+
+</head>
+<body>
+
+    <div id="preloader"></div>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"><img src="images/Logo.png"></a>
+    <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="EscondeMenu()"></i>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projetos</a></li>
+        <li><a href="">Publicações</a></li>
+        <li><a href="">Pessoas</a></li>
+        <li><a href="">Sobre nós</a></li>
+        <li><a href="">Contato</a></li>
+    </ul>
+</div>
+    <i class="fa fa-bars" onclick="Mostramenu()"></i>
+</nav>
+<h1>Publicações</h1>
+    </section>
+<!-- publicacoes -->
+<section class="Publicacoes">
+<div class="row">
+    <div class="publi-left">
+        <img src="images/Logo.png">
+        <h2>Ultimas Publicações</h2>
+        <p>
+            Lorem ipsum dolor sit amet. Qui consequatur consequatur ex reiciendis enim aut totam vitae ab illum eaque in dolor molestiae. Vel molestiae quia vel suscipit quasi sit sapiente galisum eos ducimus ipsam qui quidem esse sed labore dolor.
+            Sed voluptatem odit et quasi facilis aut quibusdam iure ut odit internos ut expedita expedita aut illum nobis. Et molestiae similique sit totam aliquid est commodi dicta ut illo voluptatem. Et porro quod ut nemo assumenda in fugiat suscipit non voluptatibus animi ad pariatur suscipit hic impedit consectetur! Rem molestias dolores nam corrupti quae et quidem voluptatem ex sint ducimus aut voluptates nisi et ipsa numquam.
+        </p>
+    </br>
+    <p>
+        Lorem ipsum dolor sit amet. Qui consequatur consequatur ex reiciendis enim aut totam vitae ab illum eaque in dolor molestiae. Vel molestiae quia vel suscipit quasi sit sapiente galisum eos ducimus ipsam qui quidem esse sed labore dolor.
+        Sed voluptatem odit et quasi facilis aut quibusdam iure ut odit internos ut expedita expedita aut illum nobis. Et molestiae similique sit totam aliquid est commodi dicta ut illo voluptatem. Et porro quod ut nemo assumenda in fugiat suscipit non voluptatibus animi ad pariatur suscipit hic impedit consectetur! Rem molestias dolores nam corrupti quae et quidem voluptatem ex sint ducimus aut voluptates nisi et ipsa numquam.
+    </p>
+</br>
+<p>
+    Lorem ipsum dolor sit amet. Qui consequatur consequatur ex reiciendis enim aut totam vitae ab illum eaque in dolor molestiae. Vel molestiae quia vel suscipit quasi sit sapiente galisum eos ducimus ipsam qui quidem esse sed labore dolor.
+    Sed voluptatem odit et quasi facilis aut quibusdam iure ut odit internos ut expedita expedita aut illum nobis. Et molestiae similique sit totam aliquid est commodi dicta ut illo voluptatem. Et porro quod ut nemo assumenda in fugiat suscipit non voluptatibus animi ad pariatur suscipit hic impedit consectetur! Rem molestias dolores nam corrupti quae et quidem voluptatem ex sint ducimus aut voluptates nisi et ipsa numquam.
+</p>
+
+    </div>
+    <div class="publi-right">
+        <h3>Publicações anteriores</h3>
+        <div>
+            <span>Publicação 1</span>
+            <span> 2020</span>
+        </div>
+        <div>
+            <span>Publicação 2</span>
+            <span> 2015</span>
+        </div>
+        <div>
+            <span>Publicação 3</span>
+            <span> 2012</span>
+        </div>
+        <div>
+            <span>Publicação 4</span>
+            <span> 2021</span>
+        </div>
+        <div>
+            <span>Publicação 5</span>
+            <span> 2017</span>
+        </div>
+    </div>
+</div>
+</section>
+<!--footer-->
+<section class="footer">
+    <h4>Lab CRie</h4>
+    <p>Somos um Laboratorio da Universidade Federal de Santa Catarina Campus Araranguá</p>
+</section>
+
+
+
+    <!-----JavaScript para mostrar e esconder o menu ---->
+    <script>
+        var navlinks = document.getElementById("navLinks")
+        var loader = document.getElementById("preloader")
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+
+        function Mostramenu(){
+            navlinks.style.right = "0";
+        }
+        function EscondeMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
