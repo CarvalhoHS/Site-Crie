@@ -106,7 +106,7 @@ nav .fa{
         position: relative;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: rgb(106, 168, 181);
         height: 100vh;
         width: 200px;
@@ -187,4 +187,321 @@ h3{
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+/*----- Pesoas ----- */
+
+.pessoas{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pessoas-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pessoas-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background: rgba(33, 200, 206, 0.7);
+    transition: 0.8s;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 50%;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----- Publi -----*/
+
+.publi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.publi-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.publi-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.publi-col p{
+    padding: 0;
+}
+
+.publi-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*-----Sobre nós-----*/
+
+.sobre{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sobre-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.sobre-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.sobre-col p{
+    padding: 0;
+}
+
+.sobre-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+@media(max-width: 700px){
+    .sobre-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+.esc{
+    margin:  100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.esc h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+.esc h1{
+    font-size: 24px;
+}
+}
+
+.buttom-2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.buttom-2:hover{
+    border: 1px solid rgb(106, 168, 181);;
+    background: rgb(106, 168, 181);;
+    transition: 1s;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*------------- Sobre Nós-------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,9.7),rgba(4,90,30,0.7)),url(images/);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    columns: #fff;
+} 
+
+.sub-header h1{
+margin-top: 100px;
+}
+
+.sobre-nos{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sobrenos-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.sobrenos-col img{
+    width: 100%;
+}
+
+.sobrenos-col h1{
+    padding-top: 0;
+}
+
+.sobrenos-col p{
+    padding: 15px 0 25px;
+}
+
+/*Piblicaçoes*/
+.Publicacoes{
+width: 80%;
+margin: auto;
+padding: 60px 0;
+}
+.publi-left{
+    flex-basis: 65%;
+}
+.publi-left img{
+width: 100%;
+}
+.publi-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.publi-left p{
+    color: #999;
+    padding: 0;
+}
+
+.publi-right{
+    flex-basis: 32%;
+}
+
+.publi-right h3{
+    background: rgb(106, 168, 181);
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.publi-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/*Contato*/
+
+.Location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.Location iframe{
+    width: 100%;
+}
+
+.Contate-nos{
+    width: 80%;
+    margin: auto;
+}
+
+.contato-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contato-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contato-col div .fa{
+    font-size: 28px;
+    color: rgba(33, 200, 206, 0.7);
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contato-col div p{
+    padding: 0;
+}
+
+.contato-col h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.contato-col input, .contato-col textarea{
+  width: 100%;
+  padding: 15px; 
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
